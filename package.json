@@ -1,0 +1,38 @@
+{
+  "name": "dockerized-node",
+  "version": "0.1.0",
+  "description": "example of express app dockerized",
+  "repository": "github:rshurts/dockerized-node",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon $NODE_DEBUG_OPTION src/server.js",
+    "lint": "eslint 'src/**/*.js'",
+    "pretty": "eslint --fix 'src/**/*.js'",
+    "jest": "jest",
+    "test": "yarn lint && yarn jest"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "author": "Russell Shurts",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.5.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "jest": "^22.0.4",
+    "nodemon": "^1.14.7",
+    "prettier": "^1.9.2",
+    "supertest": "^3.0.0"
+  }
+}
