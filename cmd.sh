@@ -6,5 +6,5 @@ if [ "$NODE_ENV" = 'development' ]; then
 elif [ "$NODE_ENV" = 'test' ]; then
   exec yarn test
 else
-  exec yarn start
+  exec node src/server.js
 fi
