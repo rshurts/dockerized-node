@@ -1,4 +1,4 @@
-FROM node:8.11.1
+FROM node:8.11.3
 
 # Setup applicaton, install dependencies, and build.
 WORKDIR /app
