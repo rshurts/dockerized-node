@@ -1,12 +1,11 @@
 {
   "extends": [
     "airbnb-base",
-    "prettier",
+    "plugin:prettier/recommended",
     "plugin:promise/recommended"
   ],
   "plugins": [
     "import",
-    "prettier",
     "promise",
     "jest"
   ],
@@ -17,7 +16,6 @@
   },
   "rules": {
     "consistent-return": "off",
-    "no-console": "off",
-    "prettier/prettier": "error"
+    "no-console": "off"
   }
 }
